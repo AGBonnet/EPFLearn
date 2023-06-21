@@ -10,7 +10,7 @@ To run the code, you first need to install the requirements in the requirements.
 
 `` pip install -r requirements.txt ``
 
-To use our trained chatbot, you will need to download the checkpoint from [here](https://drive.google.com/drive/folders/1-8UEI-sMrCNwjiC6MENCPZZBwQhkGMdh?usp=share_link) and place it in the `checkpoints/finalChatbot` folder.
+To use our trained chatbot, you will need to download the checkpoint from [here](https://drive.google.com/drive/folders/1-8UEI-sMrCNwjiC6MENCPZZBwQhkGMdh?usp=share_link) and place it in the `checkpoints/finalChatbot` folder. You can then instantiate the chatbot and ask it some questions as follows. 
 
 ```python 
 checkpoint = 'path/to/finalChatbotDirectory'
