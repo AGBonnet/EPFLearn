@@ -3,7 +3,7 @@
 Introducing **EPFLearn**, a chatbot designed to answer students’ questions on specialized course material. The chatbot leverages Google’s pre-trained [T5](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) Transformer as its foundation model, which was further fine-tuned using the StackOverflow and NLP4Education datasets.
 ## **Modern NLP: Course project Milestone 3**
 
-**Team**: Antoine Bonnet, Silvia Romanato and Alexander Sternfeld (`syntax-sorcerers`)
+**Team**: Antoine Bonnet, Silvia Romanato and Alexander Sternfeld 
 ### How to run the code
 
 To run the code, you first need to install the requirements in the requirements.txt file.
@@ -11,6 +11,13 @@ To run the code, you first need to install the requirements in the requirements.
 `` pip install -r requirements.txt ``
 
 To use our trained chatbot, you will need to download the checkpoint from [here](https://drive.google.com/drive/folders/1-8UEI-sMrCNwjiC6MENCPZZBwQhkGMdh?usp=share_link) and place it in the `checkpoints/finalChatbot` folder.
+
+```python 
+checkpoint = 'path/to/finalChatbotDirectory'
+chatbot = Chatbot(checkpoint)
+
+chatbot.ask('What is the difference between genetics and epigenetics?')
+```
 
 ### Repository structure
 
